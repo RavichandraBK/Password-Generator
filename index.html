@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monospaceland" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <title>Password generator</title>
+</head>
+
+<body>
+    <div class="container grad">
+        <div class="header">Password generator</div>
+        <div class="pass-text">
+            <input type="text" placeholder="P4$5W0rD!"><span><img src="copy-1.png" alt=""></span>
+
+        </div>
+        <div class="pass-criteria">
+            <div class="char-len">
+                <p>Character length</p>
+                <p id="pass-strength">0</p>
+            </div>
+            <input type="range" class="strength-bar" min="0" max="10" value="0">
+            <div class="checks">
+                <input type="checkbox" id="ch1" name="ch1"><label for="ch1">Include Uppercase Letters</label><br>
+                <input type="checkbox" id="ch2" name="ch1"><label for="ch2">Include Lowercase Letters</label><br>
+                <input type="checkbox" id="ch3" name="ch1"><label for="ch3">Include Numbers</label><br>
+                <input type="checkbox" id="ch4" name="ch1"><label for="ch4">Include Symbols</label>
+                
+            </div>
+            <div class="str-bar">
+                <p>STRENGTH</p>
+                <span id="sp1"></span>
+                <span id="sp2"></span>
+                <span id="sp3"></span>
+                <span id="sp4"></span>
+
+            </div>
+            <button class="gen">Generator <img src="gen-arrow.svg" alt=""></button>
+        </div>
+    </div>
+</body>
+
+</html>

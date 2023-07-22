@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    
+
+    /* animation: gradient 0.5s ease; */
+
+}
+
+
+.header {
+    height: 20px;
+    width: 20vw;
+    margin: 50px 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7E7C89;
+
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.pass-text {
+    width: 500px;
+    height: 70px;
+    margin-left: 530px;
+    display: flex;
+    
+}
+
+.pass-text input {
+    height: 70px;
+    width: 100%;
+    background-color: #24232B;
+
+}
+
+.pass-text span{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    /* left: px; */
+    right: 50px;
+
+}
+
+.pass-text input::placeholder {
+    padding-left: 20px;
+    font-family: Monospace;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.048em;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.pass-criteria {
+    width: 480px;
+    height: 480px;
+    background-color: #24232B;
+    margin-top: 30px;
+    margin-left: 530px;
+
+}
+
+.char-len {
+    display: flex;
+    justify-content: space-between;
+    font-family: Monospace;
+
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.008em;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: #fff;
+
+}
+
+.char-len :first-child {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.008em;
+    /* text-align: left; */
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 28px;
+    color: #fff;
+}
+
+#pass-strength {
+    color: #A4FFAF;
+}
+
+.strength-bar {
+    appearance: none;
+    width: 90%;
+    cursor: pointer;
+    height: 7px;
+    border-radius: 0px 8px 8px 0;
+    background-color: #19171F;
+    margin-left: 25px;
+
+}
+
+.strength-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 26px;
+    height: 26px;
+    border: 2px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.checks input {
+    cursor: pointer;
+
+    position: relative;
+    margin-top: 20px;
+    top: 5px;
+
+    width: 20px;
+    height: 22px;
+    margin-left: 28px;
+}
+
+.checks input::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    background-color: #24232B;
+}
+
+.checks input:checked::before {
+    background-color: #A4FFAF;
+}
+
+.checks label {
+
+    margin-left: 20px;
+    font-family: Monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: -0.027em;
+}
+
+.str-bar {
+    width: 421px;
+    height: 63px;
+    background-color: #18171F;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    /* flex-direction: row; */
+
+
+}
+
+.str-bar p {
+
+
+    font-family: Monospace;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.008em;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: #82808E;
+}
+
+.str-bar span {
+
+    margin-top: 15px;
+    width: 10px;
+    height: 30px;
+    border: 2px solid #fff;
+}
+
+#sp1 {
+    margin-left: 210px;
+}
+
+#sp2 {
+    margin-left: 10px;
+}
+
+#sp3 {
+    margin-left: 10px;
+}
+
+#sp4 {
+    margin-left: 10px;
+}
+
+.gen {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 424px;
+    height: 59px;
+    background-color: #A4FFAF;
+
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.103em;
+    /* text-align: left; */
+    color: #04210F;
+
+}
+
+.gen img {
+    margin-left: 10px;
+}
