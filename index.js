@@ -118,12 +118,12 @@ function BarColor(check) {
         (chkCount >= 3) ? strInd3.style.background = `#A4FFAF` : strInd3.style.background = `none`;
         (chkCount == 4) ? strInd4.style.background = `#A4FFAF` : strInd4.style.background = `none`;
     }
-    else {
-        strInd1.style.background = `none`;
-        strInd2.style.background = `none`;
-        strInd3.style.background = `none`;
-        strInd4.style.background = `none`;
-    }
+    // else {
+    //     strInd1.style.background = `none`;
+    //     strInd2.style.background = `none`;
+    //     strInd3.style.background = `none`;
+    //     strInd4.style.background = `none`;
+    // }
 
 
     // console.log(chkCount);
