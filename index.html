@@ -15,7 +15,7 @@
     <div class="container grad">
         <div class="header">Password generator</div>
         <div class="pass-text">
-            <input type="text" placeholder="P4$5W0rD!"><span><img src="copy-1.png" alt=""></span>
+            <p id="gen-pass">P4$5W0rD!</p><span class="cpy-img"><img src="copy-1.png" alt=""></span><span class="cpy">copy password</span>
 
         </div>
         <div class="pass-criteria">
@@ -31,17 +31,18 @@
                 <input type="checkbox" id="ch4" name="ch1"><label for="ch4">Include Symbols</label>
                 
             </div>
-            <div class="str-bar">
+            <div class="str-rating">
                 <p>STRENGTH</p>
-                <span id="sp1"></span>
-                <span id="sp2"></span>
-                <span id="sp3"></span>
-                <span id="sp4"></span>
+                <span id="sr1"></span>
+                <span id="sr2"></span>
+                <span id="sr3"></span>
+                <span id="sr4"></span>
 
             </div>
-            <button class="gen">Generator <img src="gen-arrow.svg" alt=""></button>
+            <button class="gen" >GENERATE <img src="gen-arrow.svg" alt=""></button>
         </div>
     </div>
 </body>
+<script src="index.js"></script>
 
 </html>
